@@ -6,15 +6,19 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1">
     <title>TheYes's MainPage</title>
   </head>
-  <body>
+  <body background="https://cdn.discordapp.com/attachments/852610835293798483/1086733818267963432/CF192F65-5B87-4104-A2BE-D700AA0737D1.png">
     <h1>TheYes's website</h1>
     <button onclick="EnterPoint()" class="btn"><img src="https://cdn.discordapp.com/attachments/858400482649047091/1072645044034617394/IMG_6260.png"></button>
     <style>
       .btn{
         color: transparent;
         background-color: transparent;
+        border: transparent;
       }
     </style>
+    
+    
+    
     
     <script>
       function EnterPoint(){
@@ -27,7 +31,9 @@
       
     </script>
     
-    
+    <div id="preloader">
+      
+    </div>
     
     
     
@@ -57,9 +63,16 @@
     <img id="Kane" src="https://cdn.discordapp.com/attachments/852610835293798483/1077643298170224671/ezgif-3-7d4a4bd543.gif">
     <br>
     <br>
-    <h3><i>(New tab when you click on links)</i></h3>
-    <h3><i>(Icon and title changes)</i></h3>
-    <h3><i>(Dark mode feature soon)</i></h3>
+    <h3><i>(sent to New tab when you click on links)</i></h3>
+    <h3><i>(New background and added preloader which is in testing)</i></h3>
+    
+    <script>
+      
+      var loader = document.getElementById(preloader);
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+      })
+      </script>
     
   </body>
 </html>
