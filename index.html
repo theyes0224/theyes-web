@@ -5,9 +5,33 @@
     <meta charset="utf-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1">
     <title>TheYes's MainPage</title>
+    <style>
+    .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(https://cdn.discordapp.com/attachments/852610835293798483/1087636066246344744/ezgif-5-64f7ce8643.gif);
+  transition: opacity 0.75s, visibility 0.75s;
+}
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+</style>
+<script>
+  window.addEventListener("load", () => {
+    document.querySelector(".loader").classList.add("loader--hidden");
+  })
+</script>
   </head>
   <body background="https://cdn.discordapp.com/attachments/852610835293798483/1086733818267963432/CF192F65-5B87-4104-A2BE-D700AA0737D1.png">
-    <div id="preloader"></div>
+    
+  <div class="loader"></div>
     
     <h1 style="color:#d4af37; text-align: center">TheYes's website</h1>
     <button style="display: block;
@@ -74,13 +98,7 @@
     <h3><i>(New background and preloader which is in testing)</i></h3>
     <h3><i>(All centered)</i></h3>
     
-    <script>
-      
-      var loader = document.getElementById(preloader);
-      window.addEventListener("load", function(){
-        loader.style.display= "none";
-      })
-      </script>
-    <!--Rember, if you the the i will and? so im gonna will do will will.-->
+    
+<!--Rember, if you the the i will and? so im gonna will do will will.-->
   </body>
 </html>
